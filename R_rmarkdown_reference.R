@@ -9,7 +9,6 @@
 #'     toc_float: 
 #'       collapsed: false
 #'     self_contained: true
-#'     keep_md: true
 #' ---
 #' \newcommand{\tuple}[1]{\langle #1 \rangle}
 
@@ -21,7 +20,7 @@ knitr::opts_knit$set(progress = FALSE)
 #' 
 library(knitr)
 
-#' Remove knitr progressbar during page build:
+#' Remove knitr progress bar during page build:
 #+ eval=FALSE
 knitr::opts_knit$set(progress = FALSE)
 
@@ -80,7 +79,9 @@ choose.method <- 'ML'
 
 
 
-#' # pandoc markdown extensions are supported
+#' # pandoc markdown extensions
+#' 
+#' `pandoc` markdown extensions are supported: see [reference](http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html#pandoc_markdown).
 #' 
 #' ## TeX's `newcommand`  
 #' 
@@ -89,6 +90,7 @@ choose.method <- 'ML'
 #' `\newcommand{\tuple}[1]{\langle #1 \rangle}`  
 #' 
 #' `$\tuple{a, b, c}$` inserts: $\tuple{a, b, c}$
+#' 
 
 #' 
 #' # R matrices to $\LaTeX$
@@ -180,7 +182,10 @@ bmatrix(diag(2), pre='A =')
 
 
 #' 
-#' # Totally ignore rmarkdown chunks
+#' # Completely ignore rmarkdown chunks
+#' 
+#' Sometimes `include=FALSE` is not sufficient, one would like to omit sections from the resulting report.  
+#' It is possible to ignore entire chunks and markdown text (i.e. lines starting with `#'`).
 #' 
 #' Just add C++ style comments:
 1
