@@ -9,6 +9,7 @@
 #'     toc_float: 
 #'       collapsed: false
 #'     self_contained: true
+#'     keep_md: true
 #' ---
 #' \newcommand{\tuple}[1]{\langle #1 \rangle}
 
