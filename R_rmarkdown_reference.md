@@ -251,9 +251,3 @@ Above, ignored markdown chunk:
 ## [1] 3
 ```
 
-
----
-title: "R_rmarkdown_reference.R"
-author: "Lorenzo"
-date: "Mon Dec 18 11:11:07 2017"
----
